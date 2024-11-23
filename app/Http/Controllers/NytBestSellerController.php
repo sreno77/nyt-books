@@ -14,14 +14,15 @@ class NytBestSellerController extends Controller
             Config::get('nytbooksearch.endpoint'),
             array_merge(
                 ['api-key' => Config::get('nytbooksearch.apikey')],
+                //['api-key' => 'abc123'],
                 $request->safe()->only('author', 'isbn', 'title', 'offset'),
             )
         );
 
-        if($bookResponse->status() == 401) {
+        if($bookResponse->status() !== 200) {
             return response()->json(
-                'Invalid API Key',
-                401
+                $bookResponse->getReasonPhrase(),
+                $bookResponse->status()
             );
         }
 
