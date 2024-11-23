@@ -1,0 +1,67 @@
+Color
+-----
+bluish
+
+Border Radius
+-------------
+larger to feel playful
+
+Language
+--------
+friendly, personal tone
+
+Spacing Sizes
+-------------
+4px
+8px
+12px
+16px
+24px
+32px
+48px
+64px
+96px
+128px
+192px
+256px
+384px
+512px
+640px
+768px
+
+Font Sizes
+-------------
+12px
+14px
+16px
+18px
+20px
+24px
+30px
+36px
+48px
+60px
+72px
+
+Fonts
+-----
+-apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+
+Line Length
+-----------
+45 to 75 characters
+
+Use Baseline not Center
+-----------------------
+makes multiple font sizes on same line look good
+
+
+https://dev.to/driannaird/create-floating-label-input-using-tailwind-css-3409
+
+
+
+
+
+./vendor/bin/sail up
+npm run dev
+./vendor/bin/sail php artisan queue:work
